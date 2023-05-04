@@ -21,17 +21,17 @@ public class HomeController : Controller
      
      public IActionResult SelectIndumentaria()
     {
-      ViewBag.ListaEquipos = Equipos.ListaEquipos;
-      ViewBag.ListaMedias = Equipos.ListaMedias;
-      ViewBag.ListaPantalones = Equipos.ListaPantalones;
-      ViewBag.ListaRemera = Equipos.ListaRemera;
+      ViewBag.listaEquipos = Equipos.listaEquipos;
+      ViewBag.listaMedias = Equipos.listaMedias;
+      ViewBag.listaPantalones = Equipos.listaPantalones;
+      ViewBag.listaRemera = Equipos.listaRemera;
       return View(SelectIndumentaria());
     }
 
-     public IActionResult GuardarIndumentaria(int equipo, int short, int media, int remera)
+     public IActionResult GuardarIndumentaria(int equipo, int pantalon, int media, int remera)
     {
       Equipos.Indumentaria(medias, pantalon, remera);
-      Equipos.IngresarIndumentaria(equipoSeleccionado, Indumentaria item);
+      Equipos.IngresarIndumentaria(equipoSeleccionado, Equipos.Indumentaria(medias, pantalon, remera));
       return View("index");
     }
 

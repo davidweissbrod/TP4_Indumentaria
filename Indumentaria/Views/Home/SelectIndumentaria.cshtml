@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seleccionar Indumentaria</title>
+</head>
+<body>
+    <form action='@Url.Action("Equipos", "Home")'>
+        <input type="number" name = "Equipo" required>
+        @foreach (int item in listaEquipos)
+        {
+            <input type="radio" name="Equipos" value="@ViewBag.listaEquipos[item]"> @item
+        }
+    </form>
+</body>
+</html>
