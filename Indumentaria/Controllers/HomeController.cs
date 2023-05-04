@@ -1,6 +1,6 @@
-﻿using System.Diagnostics;
+﻿
 using Microsoft.AspNetCore.Mvc;
-using Indumentaria.Models;
+
 
 namespace Indumentaria.Controllers;
 
@@ -13,17 +13,25 @@ public class HomeController : Controller
         _logger = logger;
     }
 
-    public IActionResult Index()
+    public IActionResult Index(dictionary equiposIndumentaria)
     {
-      string induemtaria = ViewBag.EquiposIndumentaria;
+      ViewBag.equiposIndumentaria = Equipos.IngresarIndumentaria();
       return View("index");
     }
-
+     
      public IActionResult SelectIndumentaria()
     {
-      for(int i = 0; i < 4; i++){
-        
-      }
+      ViewBag.ListaEquipos = Equipos.ListaEquipos;
+      ViewBag.ListaMedias = Equipos.ListaMedias;
+      ViewBag.ListaPantalones = Equipos.ListaPantalones;
+      ViewBag.ListaRemera = Equipos.ListaRemera;
+      return View(SelectIndumentaria());
+    }
+
+     public IActionResult GuardarIndumentaria(int equipo, int short, int media, int remera)
+    {
+      Equipos.Indumentaria(medias, pantalon, remera);
+      Equipos.IngresarIndumentaria(equipoSeleccionado, Indumentaria item);
       return View("index");
     }
 
