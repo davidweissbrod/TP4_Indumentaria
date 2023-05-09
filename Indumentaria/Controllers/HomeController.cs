@@ -1,8 +1,9 @@
 ﻿
 using Microsoft.AspNetCore.Mvc;
 
-
 namespace Indumentaria.Controllers;
+
+using System.Collections.Generic;
 
 public class HomeController : Controller
 {
@@ -13,7 +14,7 @@ public class HomeController : Controller
         _logger = logger;
     }
 
-    public IActionResult Index(dictionary equiposIndumentaria)
+    public IActionResult Index()
     {
       ViewBag.equiposIndumentaria = Equipos.IngresarIndumentaria();
       return View("Index");
@@ -24,7 +25,7 @@ public class HomeController : Controller
       ViewBag.listaEquipos = Equipos.listaEquipos;
       ViewBag.listaMedias = Equipos.listaMedias;
       ViewBag.listaPantalones = Equipos.listaPantalones;
-      ViewBag.listaRemera = Equipos.listaRemera;
+      ViewBag.listaRemera = Equipos.listaRemeras;
       return View("SelectIndumentaria");
     }
 
