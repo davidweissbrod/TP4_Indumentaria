@@ -5,40 +5,45 @@ build_property.UsingMicrosoftNETSdkWeb = true
 build_property.ProjectTypeGuids = 
 build_property.InvariantGlobalization = 
 build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Indumentaria
 build_property.RootNamespace = Indumentaria
-build_property.ProjectDir = z:\TP4_Indumentaria\Indumentaria\
-build_property.RazorLangVersion = 6.0
+build_property.ProjectDir = Z:\TP4_Indumentaria\Indumentaria\
+build_property.RazorLangVersion = 7.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = z:\TP4_Indumentaria\Indumentaria
+build_property.MSBuildProjectDirectory = Z:\TP4_Indumentaria\Indumentaria
 build_property._RazorSourceGeneratorDebug = 
 
-[z:/TP4_Indumentaria/Indumentaria/Views/Home/Index.cshtml]
+[Z:/TP4_Indumentaria/Indumentaria/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[z:/TP4_Indumentaria/Indumentaria/Views/Home/Privacy.cshtml]
+[Z:/TP4_Indumentaria/Indumentaria/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[z:/TP4_Indumentaria/Indumentaria/Views/Shared/Error.cshtml]
+[Z:/TP4_Indumentaria/Indumentaria/Views/Home/SelectIndumentaria.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxTZWxlY3RJbmR1bWVudGFyaWEuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[Z:/TP4_Indumentaria/Indumentaria/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[z:/TP4_Indumentaria/Indumentaria/Views/Shared/_ValidationScriptsPartial.cshtml]
+[Z:/TP4_Indumentaria/Indumentaria/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[z:/TP4_Indumentaria/Indumentaria/Views/_ViewImports.cshtml]
+[Z:/TP4_Indumentaria/Indumentaria/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[z:/TP4_Indumentaria/Indumentaria/Views/_ViewStart.cshtml]
+[Z:/TP4_Indumentaria/Indumentaria/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[z:/TP4_Indumentaria/Indumentaria/Views/Shared/_Layout.cshtml]
+[Z:/TP4_Indumentaria/Indumentaria/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-7g2iy4d3db

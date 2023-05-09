@@ -1,0 +1,8 @@
+Z:\TP4_Indumentaria\Indumentaria\obj\Debug\net7.0\Indumentaria.csproj.AssemblyReference.cache
+Z:\TP4_Indumentaria\Indumentaria\obj\Debug\net7.0\Indumentaria.GeneratedMSBuildEditorConfig.editorconfig
+Z:\TP4_Indumentaria\Indumentaria\obj\Debug\net7.0\Indumentaria.AssemblyInfoInputs.cache
+Z:\TP4_Indumentaria\Indumentaria\obj\Debug\net7.0\Indumentaria.AssemblyInfo.cs
+Z:\TP4_Indumentaria\Indumentaria\obj\Debug\net7.0\Indumentaria.csproj.CoreCompileInputs.cache
+Z:\TP4_Indumentaria\Indumentaria\obj\Debug\net7.0\Indumentaria.MvcApplicationPartsAssemblyInfo.cache
+Z:\TP4_Indumentaria\Indumentaria\obj\Debug\net7.0\Indumentaria.RazorAssemblyInfo.cache
+Z:\TP4_Indumentaria\Indumentaria\obj\Debug\net7.0\Indumentaria.RazorAssemblyInfo.cs

@@ -7,12 +7,28 @@
     <title>Seleccionar Indumentaria</title>
 </head>
 <body>
-    <form action='@Url.Action("Equipos", "Home")'>
+    <form action = '@Url.Action("GuardarIndumentaria", "Index")'>
         <input type="number" name = "Equipo" required>
-        @foreach (int item in listaEquipos)
-        {
+        @foreach (int item in listaEquipos){
             <input type="radio" name="Equipos" value="@ViewBag.listaEquipos[item]"> @item
         }
+        <br>
+        <input type = "number" alt = "Remeras" required>
+        @foreach(int item in ViewBag.listaRemeras){
+            <img src = "listaRemeras[item]" alt = "Imagenes Remeras">
+        }
+        <br>
+        <input type = "number" alt = "Pantalones" required>
+        @foreach(int item in ViewBag.listaPantalones){
+            <img src = "listaPantalones[item]" alt = "Imagenes Pantalones">
+        }
+        <br>
+        <input type = "number" alt = "Medias" required>
+        @foreach(int item in ViewBag.listaMedias){
+            <img src = "listaMedias[item]" alt = "Imagenes Medias">
+        }
+        <br>
+        <input type = "submit" value = "Equipos" required>
     </form>
 </body>
 </html>

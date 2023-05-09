@@ -5,25 +5,30 @@ public class Indumentaria{
     public string remera {get; private set;}
 
 
-public Indumentaria(string medias, string pantalon, string remera){
+public Indumentaria(string equipo, string medias, string pantalon, string remera){
     medias = medias;
     pantalon = pantalon;
     remera = remera;
 }
 }   
 
-
 public static class Equipos{
-    list<string> listaEquipos{get;private set;} = new list<string>{ "River", "Boca", "Racing", "San descenso", "San Telmo", "Atlanta", "Independiente"};
-    list<string> listaMedias{get; private set;} = new list<string>{"wwwroot/medias_rojas", "wwwroot/medias_azul", "wwwroot/medias_fluor", "wwwroot/medias_rositas", "wwwroot/medias_violetas", "wwwroot/medias_negras", "wwwroot/medias_verdes"};
-    list<string> listaPantalones{get;private set;} = new list<string>{"wwwroot/short_celeste", "wwwroot/short_bordo", "wwwroot/short_fluor", "wwwroot/short_azul", "wwwroot/short_negro", "wwwroot/short_verde", "wwwroot/short_blanco"};
-    list<string> listaRemeras{get;private set;} = new list <string>{"wwwroot/camiseta_blanca", "wwwroot/camiseta_byn","wwwroot/camiseta_degrade","wwwroot/camiseta_byr","wwwroot/camiseta_degrade_celeste","wwwroot/camiseta_ryc","wwwroot/camiseta_vyb"};
-    dictionary<string,Indumentaria> equiposIndumentaria{get;private set;} = new dictionary<string, Indumentaria>();
+    List<string> listaEquipos{get;private set;} = new List<string>{ "River", "Boca", "Racing", "San descenso", "San Telmo", "Atlanta", "Independiente"};
+    List<string> listaMedias{get; private set;} = new List<string>{"medias_rojo.jpg", "medias_azul.webp", "medias_fluor.jpg", "medias_rositas.jfif", "medias_violetas.jfif", "medias_negras.webp", "medias_verdes.jfif"};
+    List<string> listaPantalones{get;private set;} = new List<string>{"short_celeste.jpg", "short_bordo.jpg", "short_fluor.jpg", "short_azul.jfif", "short_negro.jpg", "short_verde.jfif", "short_blanco.webp"};
+    List<string> listaRemeras{get;private set;} = new List<string>{"camiseta_blanca.jpg", "camiseta_byn.jfif","camiseta_degrade.jfif","camiseta_byr.jpg","camiseta_degrade_celeste.jpg","camiseta_ryc.jfif","camiseta_vyb.jpg"};
+    Dictionary<string,Indumentaria> equiposIndumentaria{get;private set;} = new Dictionary<string, Indumentaria>();
+}
 
-    bool IngresarIndumentaria(string equipoSeleccionado, Indumentaria item){
-        foreach(string item in equiposIndumentaria.Keys){
+public bool IngresarIndumentaria(int equipoSeleccionado, Indumentaria item){
+    foreach(string item in equiposIndumentaria.Keys){
+        if(equiposIndumentaria.ContainsKey(equiposIndumentaria.Key)){
             equiposIndumentaria.Add(equipoSeleccionado, item);
+            return true;
         }
-        return true;
+        else{
+            return false;
+        }
     }
+        
 }

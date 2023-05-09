@@ -16,7 +16,7 @@ public class HomeController : Controller
     public IActionResult Index(dictionary equiposIndumentaria)
     {
       ViewBag.equiposIndumentaria = Equipos.IngresarIndumentaria();
-      return View("index");
+      return View("Index");
     }
      
      public IActionResult SelectIndumentaria()
@@ -25,14 +25,14 @@ public class HomeController : Controller
       ViewBag.listaMedias = Equipos.listaMedias;
       ViewBag.listaPantalones = Equipos.listaPantalones;
       ViewBag.listaRemera = Equipos.listaRemera;
-      return View(SelectIndumentaria());
+      return View("SelectIndumentaria");
     }
 
      public IActionResult GuardarIndumentaria(int equipo, int pantalon, int media, int remera)
     {
-      Equipos.Indumentaria(medias, pantalon, remera);
-      Equipos.IngresarIndumentaria(equipoSeleccionado, Equipos.Indumentaria(medias, pantalon, remera));
-      return View("index");
+      Indumentaria nuevo = new Indumentaria(medias, pantalon, remera);
+      Equipos.IngresarIndumentaria(equipo, nuevo);
+      return View("Index");
     }
 
     public IActionResult Privacy()
