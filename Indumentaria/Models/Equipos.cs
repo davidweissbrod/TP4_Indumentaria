@@ -13,7 +13,8 @@ public Indumentaria(string medias, string pantalon, string remera){
     remera = remera;
 }
 
-public Indumentaria(string equipo, string medias, string pantalon, string remera){
+public Indumentaria(string medias, string pantalon, string remera){
+
 
 }
 }  

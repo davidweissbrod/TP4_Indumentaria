@@ -8,26 +8,26 @@
 </head>
 <body>
     <form action = '@Url.Action("GuardarIndumentaria", "Index")'>
-        <input type="number" name = "Equipo" required>
-        @foreach (int item in listaEquipos){
+        <input type="number" name = "Equipo" required> 
+        @foreach(int item in listaEquipos){
             <input type="radio" name="Equipos" value="@ViewBag.listaEquipos[item]"> @item
         }
-        <br>
+        <br/>
         <input type = "number" alt = "Remeras" required>
         @foreach(int item in ViewBag.listaRemeras){
             <img src = "listaRemeras[item]" alt = "Imagenes Remeras">
         }
-        <br>
+        <br/>
         <input type = "number" alt = "Pantalones" required>
         @foreach(int item in ViewBag.listaPantalones){
             <img src = "listaPantalones[item]" alt = "Imagenes Pantalones">
         }
-        <br>
+        <br/>
         <input type = "number" alt = "Medias" required>
         @foreach(int item in ViewBag.listaMedias){
             <img src = "listaMedias[item]" alt = "Imagenes Medias">
         }
-        <br>
+        <br/>
         <input type = "submit" value = "Equipos" required>
     </form>
 </body>

@@ -16,7 +16,7 @@ public class HomeController : Controller
 
     public IActionResult Index()
     {
-      ViewBag.equiposIndumentaria = Equipos.IngresarIndumentaria();
+      ViewBag.equiposIndumentaria = Equipos.equiposIndumentaria;
       return View("Index");
     }
      
